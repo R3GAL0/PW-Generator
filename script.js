@@ -37,6 +37,24 @@ function random(array) {
 }
 
 // prompt call fucntion
+function call() {
+  alert("What do you want for you password?");
+  var uCase = window.confirm("Do you want upper case letters?");
+  var lCase = window.confirm("Do you want lower case letters?");
+  var symb = window.confirm("Do you want symbols?");
+  var numbs = window.confirm("Do you want numbers");
+  var pass = prompt("How long do you want the password (8-128)?");
+  var criteria = {
+    upper: uCase,
+    lower: lCase,
+    number: numbs,
+    symbol: symb,
+    leng: pass,
+  }
+  console.log(criteria);
+  return criteria;
+}
+
 // store prompts in an object
 // use prompts to make an array of all possible chars
 // make the password array
