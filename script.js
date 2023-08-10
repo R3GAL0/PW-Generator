@@ -29,6 +29,13 @@ var numbsA = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 
 // random array selector
+// takes in an array and returns a random element from that array
+function random(array) {
+  var index = Math.floor(Math.random()*array.length);
+  var ele = array[index]
+  return ele;
+}
+
 // prompt call fucntion
 // store prompts in an object
 // use prompts to make an array of all possible chars
