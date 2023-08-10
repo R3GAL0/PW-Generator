@@ -36,7 +36,8 @@ function random(array) {
   return ele;
 }
 
-// prompt call fucntion
+// prompt call function
+// returns an object with the stored prompts
 function call() {
   alert("What do you want for you password?");
   var uCase = window.confirm("Do you want upper case letters?");
@@ -44,6 +45,14 @@ function call() {
   var symb = window.confirm("Do you want symbols?");
   var numbs = window.confirm("Do you want numbers");
   var pass = prompt("How long do you want the password (8-128)?");
+  // verifies if pass is a number and if it is between 8-128. If not it assigns a value for pass
+  if (pass.length < 8){
+    pass = 8;
+  }else if (pass.length > 128){
+    pass = 128;
+  }else if (!isNaN(pass)){
+    pass = 8;
+  }
   var criteria = {
     upper: uCase,
     lower: lCase,
@@ -55,7 +64,6 @@ function call() {
   return criteria;
 }
 
-// store prompts in an object
 // use prompts to make an array of all possible chars
 // make the password array
 // overwrite part of the array to include all req chars
