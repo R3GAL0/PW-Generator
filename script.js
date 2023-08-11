@@ -46,9 +46,9 @@ function call() {
   var numbs = window.confirm("Do you want numbers");
   var pass = prompt("How long do you want the password (8-128)?");
   // verifies if pass is a number and if it is between 8-128. If not it assigns a value for pass
-  if (pass.length < 8){
+  if (pass < 8){
     pass = 8;
-  }else if (pass.length > 128){
+  }else if (pass > 128){
     pass = 128;
   }else if (!isNaN(pass)){
     pass = 8;
@@ -63,7 +63,7 @@ function call() {
   console.log(criteria);
   return criteria;
 }
-
+call();
 // use prompts to make an array of all possible chars
 // make the password array
 // overwrite part of the array to include all req chars

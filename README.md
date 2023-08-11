@@ -1,8 +1,8 @@
-# Password Generator (MW-HW-02)
+# Password Generator
 
 [Challenge 3 for Max Walent]
 
-<a href='#'>Deployed Link</a>
+<a href='https://r3gal0.github.io/PW-Generator/'>Deployed Link</a>
 
 ## Description
 
@@ -33,7 +33,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Req:
-
-add a photo of myself
