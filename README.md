@@ -8,7 +8,7 @@
 
 A random password generator. It creates a password depending on user criteria answered during a prompt (password length, numbers, uppercase letters, lowercase letters, or symbols). Includes at least one of each selected criteria and fills the rest of the password.
 
-<img src='./img1.JPG' alt='Image of the website'/>
+<img src='./assets/img1.JPG' alt='Image of the website'/>
 
 ## License
 

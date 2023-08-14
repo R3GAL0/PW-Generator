@@ -79,19 +79,20 @@ function call() {
   var lCase = window.confirm("Do you want lower case letters?");
   var symb = window.confirm("Do you want symbols?");
   var numbs = window.confirm("Do you want numbers");
-  var pass = prompt("How long do you want the password (8-128)?");
+  var pass = passLeng();
+  // var pass = passLeng();
   // verifies if pass is a number and if it is between 8-128. If not it assigns a value for pass
   if (!uCase && !lCase && !symb && !numbs){
     alert("You must pick one");
     window.stop();
-  }
-  if (pass < 8){
-    pass = 8;
-  }else if (pass > 128){
-    pass = 128;
-  }else if (!isNaN(pass)){
-    pass = 8;
-  }
+   }
+  // if (pass < 8){
+  //   pass = 8;
+  // }else if (pass > 128){
+  //   pass = 128;
+  // }else if (isNaN(pass)){
+  //   pass = 8;
+  // }
   var criteria = {
     upper: uCase,
     lower: lCase,
@@ -101,4 +102,16 @@ function call() {
   }
   console.log(criteria);
   return criteria;
+}
+
+// function to Re-prompt until user enters a correct value
+function passLeng () {
+  var leng = prompt("How long do you want the password (8-128)?");
+  if ( leng < 8 || leng > 128){
+    leng  = passLeng();
+  }else if (isNaN(leng)){
+    leng  = passLeng();
+  }
+  console.log(leng);
+  return leng;
 }
